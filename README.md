@@ -1,4 +1,5 @@
 # 🧑‍💻 ghprofile
+[![PyPI Downloads](https://static.pepy.tech/badge/ghprofile)](https://pepy.tech/projects/ghprofile)
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
