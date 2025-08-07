@@ -91,5 +91,4 @@ class Ghprofile:
 
 
 
-gh = Ghprofile("ujjwaluzu")
-print(gh.get_bio())
+
