@@ -1,6 +1,6 @@
 [project]
 name = "ghprofile"
-version = "0.1.0"
+version = "0.2.0"
 description = "A lightweight library to fetch and summarize GitHub user data"
 authors = [
     { name = "Ujjwal Baunthiyal", email = "baunthiyalujjwal52@gmail.com" }

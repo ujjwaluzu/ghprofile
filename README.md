@@ -19,10 +19,17 @@ A lightweight Python library to fetch and summarize a GitHub user's public profi
 ```bash
 pip install ghprofile
 ```
-## 🔑 Authentication
-You need a GitHub personal access token to use the GitHub API
+## 🔑 Authentication (Optional)
+You can pass a GitHub personal access token to increase your rate limits and access private data.
+
+✅ Token is optional
+
+🕒 Without token: ~60 API calls/hour (public data only)
+
+🔐 With token: ~5000 API calls/hour
 
 ## 🧑‍💻 Usage
+With Token
 ```bash
 from ghprofile.core import Ghprofile
 
@@ -34,7 +41,12 @@ print(gh.get_repo())        # → ['hello-world', 'test-repo']
 print(gh.get_stars())       # → 42
 print(gh.get_pinned_repos())# → ['hello-world', 'octo-repo']
 ```
+Without Token
+```bash
+from ghprofile.core import Ghprofile
 
+gh = Ghprofile("octocat")
+```
 ## 📁 Project Structure
 ```bash
 ghprofile/

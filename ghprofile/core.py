@@ -6,12 +6,19 @@ class GhprofileError(Exception):
 class Ghprofile:
     api_base = "https://api.github.com/users/"
 
-    def __init__(self, username, token):
+    def __init__(self, username, token=None):
         self.username = username
-        self.headers = {
-            "Authorization": f"token {token}",
-            "User-Agent": "ghprofile-lib"
-        }
+
+        if token:
+            self.headers = {
+                "Authorization": f"token {token}",
+                "User-Agent": "ghprofile-lib"
+            }
+        else:
+            self.headers = {
+                "User-Agent": "ghprofile-lib"
+            }
+       
         try:
             self.api = requests.get(f"{self.api_base}{self.username}", headers=self.headers)
             self.repo_api = requests.get(f"{self.api_base}{self.username}/repos", headers=self.headers)
@@ -84,3 +91,5 @@ class Ghprofile:
 
 
 
+gh = Ghprofile("ujjwaluzu")
+print(gh.get_bio())
