@@ -88,7 +88,3 @@ class Ghprofile:
 
         repos = [item.text.strip() for item in pinned_items]
         return repos if repos else "No pinned repositories"
-
-
-
-

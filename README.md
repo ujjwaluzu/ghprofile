@@ -1,11 +1,11 @@
-# 🧑‍💻 ghprofile
+# ghprofile
 [![PyPI Downloads](https://static.pepy.tech/badge/ghprofile)](https://pepy.tech/projects/ghprofile)
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
 A lightweight Python library to fetch and summarize a GitHub user's public profile and repository stats, including followers, bio, starred repos, and pinned repositories.
 
-## 🚀 Features
+##  Features
 
 - ✅ Get user bio, followers, and following count  
 - ✅ List all public repositories  
@@ -14,12 +14,12 @@ A lightweight Python library to fetch and summarize a GitHub user's public profi
 - ✅ Custom error handling for failed API calls  
 - ✅ Simple to use and extend
 
-## 📦 Installation
+##  Installation
 
 ```bash
 pip install ghprofile
 ```
-## 🔑 Authentication (Optional)
+##  Authentication (Optional)
 You can pass a GitHub personal access token to increase your rate limits and access private data.
 
 ✅ Token is optional
@@ -47,16 +47,7 @@ from ghprofile.core import Ghprofile
 
 gh = Ghprofile("octocat")
 ```
-## 📁 Project Structure
-```bash
-ghprofile/
-├── core.py          # Main class Ghprofile
-├── __init__.py
-tests/
-├── test_core.py     # Unit tests using pytest
-pyproject.toml       # Build and tool config
-README.md
-```
+
 ## 📋 Error Handling
 All exceptions are wrapped under a custom exception class:
 ```bash
