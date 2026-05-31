@@ -7,12 +7,12 @@ A lightweight Python library to fetch and summarize a GitHub user's public profi
 
 ##  Features
 
-- ✅ Get user bio, followers, and following count  
-- ✅ List all public repositories  
-- ✅ Count total stars across repositories  
-- ✅ Fetch pinned repositories (via scraping)  
-- ✅ Custom error handling for failed API calls  
-- ✅ Simple to use and extend
+-  Get user bio, followers, and following count  
+-  List all public repositories  
+-  Count total stars across repositories  
+-  Fetch pinned repositories (via scraping)  
+-  Custom error handling for failed API calls  
+-  Simple to use and extend
 
 ##  Installation
 
@@ -22,13 +22,13 @@ pip install ghprofile
 ##  Authentication (Optional)
 You can pass a GitHub personal access token to increase your rate limits and access private data.
 
-✅ Token is optional
+ Token is optional
 
-🕒 Without token: ~60 API calls/hour (public data only)
+ Without token: ~60 API calls/hour (public data only)
 
-🔐 With token: ~5000 API calls/hour
+ With token: ~5000 API calls/hour
 
-## 🧑‍💻 Usage
+##  Usage
 With Token
 ```bash
 from ghprofile.core import Ghprofile
@@ -48,7 +48,7 @@ from ghprofile.core import Ghprofile
 gh = Ghprofile("octocat")
 ```
 
-## 📋 Error Handling
+##  Error Handling
 All exceptions are wrapped under a custom exception class:
 ```bash
 from ghprofile.core import GhprofileError
@@ -58,7 +58,7 @@ try:
 except GhprofileError as e:
     print("Something went wrong:", e)
 ```
-## 🤝 Contributing
+##  Contributing
 Contributions are welcome! If you’d like to:
 
 Add new features (e.g. commit history, language breakdown)
